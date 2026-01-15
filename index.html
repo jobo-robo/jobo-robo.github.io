@@ -17,6 +17,7 @@
             color: #e8dcc4;
             min-height: 100vh;
             line-height: 1.6;
+            scroll-behavior: smooth;
         }
 
         header {
@@ -173,6 +174,12 @@
         .project-card h3 {
             color: #f4e8d0;
             margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .project-card p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
         }
 
         .featured-project {
@@ -235,6 +242,54 @@
             background: rgba(15, 23, 42, 0.8);
             color: #a39f93;
             border-top: 2px solid rgba(139, 172, 136, 0.3);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1.5rem 0;
+        }
+
+        .social-links a {
+            color: #d4c5a9;
+            font-size: 1.8rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #8bac88;
+            transform: translateY(-5px);
+        }
+
+        /* Scroll to top button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: rgba(139, 172, 136, 0.8);
+            color: #0a1128;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #8bac88;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+
+        .scroll-to-top.visible {
+            display: flex;
+        }
+
+        .scroll-to-top:hover {
+            background: #8bac88;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(139, 172, 136, 0.4);
         }
 
         /* Decorative stars */
@@ -365,8 +420,21 @@
     </div>
 
     <footer>
+        <div class="social-links">
+            <a href="mailto:your.email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/yourusername" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
         <p>&copy; 2025 Your Name. All rights reserved.</p>
     </footer>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top" id="scrollToTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <script>
         // Generate random stars
@@ -386,6 +454,24 @@
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Scroll to top button functionality
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
             });
         });
     </script>
