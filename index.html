@@ -34,8 +34,26 @@
             margin: 0 auto;
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 3rem;
             padding: 0 2rem;
+        }
+
+        .logo {
+            height: 50px;
+            width: auto;
+            margin-right: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: rotate(10deg) scale(1.1);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
         }
 
         nav a {
@@ -249,10 +267,13 @@
 
     <header>
         <nav>
-            <a href="#about">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <img src="https://raw.githubusercontent.com/jobo-robo/jobo-robo.github.io/main/jobotherobo.png" alt="Jobo the Robot Logo" class="logo">
+            <div class="nav-links">
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
     </header>
 
@@ -292,7 +313,7 @@
                 <div class="project-card featured-project">
                     <h3>Cybersecurity Challenges in Large Software Scale Projects (LSSC Framework)</h3>
                     <div class="project-image">
-                        <img src="https://github.com/jobo-robo/jobo-robo.github.io/blob/main/lssc-framework-poster.png" alt="LSSC Framework Research Poster">
+                        <img src="https://raw.githubusercontent.com/jobo-robo/jobo-robo.github.io/main/lssc-framework-poster.png" alt="LSSC Framework Research Poster">
                     </div>
                     <p>As a final year project, my team finished working on an R&D project focused on literature to create a practical cybersecurity framework for software projects that would be used throughout the SDLC cycle while also catering to 70,000+ users.</p>
                     <p>This project integrates security early in the development of software projects and involved collaboration with clients, mentors, and project team members through meetings and emails.</p>
@@ -304,12 +325,26 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <h3>Project Two</h3>
-                    <p>Description of your second project. Share the challenges you overcame and what you learned.</p>
+                    <h3>Service Desk System (Pick IT Up)</h3>
+                    <p>In this project my partner and I were asked to program a service desk system. This involved the use of Java and GitHub. The system included user account creation with secure login and logout functionality.</p>
+                    <p>It provided a visual interface to view tickets from a Derby database, along with filtering and status updates (Open, Closed, In-Review). The platform also supported different account types, including IT staff and Guest users.</p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Derby Database</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">GUI Development</span>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <h3>Project Three</h3>
-                    <p>Another amazing project you've worked on. Highlight your achievements and contributions.</p>
+                    <h3>Campbell and Starr Bakers' Network</h3>
+                    <p>Based on a case study, my team and I were appointed to design and implement a robust network that meets the requirements of the business owners. In this project, I configured network devices of the virtual network, including the servers and the PC hosts.</p>
+                    <p>Together we installed the Active Directory, the DNS, and DHCP server. We also made IP configurations and wrote a PowerShell script to automate the creation of new AD users and assign their permissions.</p>
+                    <div class="project-tags">
+                        <span class="tag">Network Design</span>
+                        <span class="tag">Active Directory</span>
+                        <span class="tag">PowerShell</span>
+                        <span class="tag">DNS/DHCP</span>
+                    </div>
                 </div>
             </div>
         </section>
