@@ -46,11 +46,14 @@
             margin-right: auto;
             transition: transform 0.3s ease;
             background: transparent;
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
             image-rendering: crisp-edges;
         }
 
         .logo:hover {
-            transform: rotate(10deg) scale(1.1);
+            transform: scale(1.1);
+            filter: brightness(1.2);
         }
 
         .nav-links {
@@ -324,7 +327,7 @@
 
     <header>
         <nav>
-            <img src="https://raw.githubusercontent.com/jobo-robo/jobo-robo.github.io/main/jobotherobo.png" alt="Jobo the Robot Logo" class="logo">
+            <img src="https://raw.githubusercontent.com/jobo-robo/jobo-robo.github.io/main/fireplace.gif" alt="Cozy Fireplace" class="logo">
             <div class="nav-links">
                 <a href="#about">About Me</a>
                 <a href="#skills">Skills</a>
