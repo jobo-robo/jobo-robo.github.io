@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jose Laserna's Portfolio</title>
+    <title>Joby Laserna's Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -140,7 +140,7 @@
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(5, 1fr);
             gap: 2rem;
             margin-top: 2rem;
         }
@@ -265,8 +265,20 @@
         }
 
         /* Make images stack on mobile */
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
             .project-images-dual {
+                grid-template-columns: (3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .skills-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -481,7 +493,7 @@
 
     <div class="container" style="position: relative; z-index: 10;">
         <div class="hero">
-            <h1>Welcome to Jose Laserna's Portfolio</h1>
+            <h1>Welcome to Joby Laserna's Portfolio</h1>
         </div>
 
         <section id="about">
@@ -493,6 +505,18 @@
         <section id="skills">
             <h2>Skills</h2>
             <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Networking</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TCP/IP</span>
+                        <span class="skill-tag">DNS</span>
+                        <span class="skill-tag">DHCP</span>
+                        <span class="skill-tag">VLANs</span>
+                        <span class="skill-tag">VPNs</span>
+                        <span class="skill-tag">Routing & Switching</span>
+                        <span class="skill-tag">Cisco IOS</span>
+                    </div>
+                </div>
                 <div class="skill-item">
                     <h3>Systems & Cloud</h3>
                     <div class="skill-tags">
@@ -507,18 +531,6 @@
                     </div>
                 </div>
                 <div class="skill-item">
-                    <h3>Networking</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">TCP/IP</span>
-                        <span class="skill-tag">DNS</span>
-                        <span class="skill-tag">DHCP</span>
-                        <span class="skill-tag">VLANs</span>
-                        <span class="skill-tag">VPNs</span>
-                        <span class="skill-tag">Routing & Switching</span>
-                        <span class="skill-tag">Cisco IOS</span>
-                    </div>
-                </div>
-                <div class="skill-item">
                     <h3>Security</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">ACLs</span>
@@ -526,8 +538,7 @@
                         <span class="skill-tag">Network Hardening</span>
                         <span class="skill-tag">IDS/IPS</span>
                         <span class="skill-tag">Nmap</span>
-                        <span class="skill-tag">SIEM Monitoring</span>
-                        <span class="skill-tag">Guardz</span>
+                        <span class="skill-tag">Guardz (SIEM)</span>
                     </div>
                 </div>
                 <div class="skill-item">
@@ -644,7 +655,7 @@
                 <a href="https://github.com/jobo-robo" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/jose-laserna" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
             </div>
-            <p>&copy; 2026 Jose Laserna. Designed and Built with ❤︎.</p>
+            <p>&copy; 2026 Joby Laserna. Designed and Built with ❤︎.</p>
             <p>Jeremiah 29:11</p>
         </footer>
 
