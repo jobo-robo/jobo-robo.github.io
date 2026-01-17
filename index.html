@@ -140,7 +140,7 @@
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
@@ -265,20 +265,8 @@
         }
 
         /* Make images stack on mobile */
-        @media (max-width: 1200px) {
-            .project-images-dual {
-                grid-template-columns: (3, 1fr);
-            }
-        }
-
         @media (max-width: 768px) {
-            .skills-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .skills-grid {
+            .project-images-dual {
                 grid-template-columns: 1fr;
             }
         }
@@ -501,10 +489,22 @@
             <p>I’m a curious and enthusiastic Networks and Cybersecurity graduate from AUT with a keen passion for innovation and practical tech solutions. 
                 I thrive on learning new skills, exploring new technologies, and taking on challenges that push me to grow professionally and personally.</p>
         </section>
-
-        <section id="skills">
+            <section id="skills">
             <h2>Skills</h2>
             <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Systems & Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Windows & Linux</span>
+                        <span class="skill-tag">Active Directory</span>
+                        <span class="skill-tag">Entra ID (Azure AD)</span>
+                        <span class="skill-tag">Microsoft 365</span>
+                        <span class="skill-tag">Intune</span>
+                        <span class="skill-tag">Autopilot</span>
+                        <span class="skill-tag">Hyper-V</span>
+                        <span class="skill-tag">Windows Server</span>
+                    </div>
+                </div>
                 <div class="skill-item">
                     <h3>Networking</h3>
                     <div class="skill-tags">
