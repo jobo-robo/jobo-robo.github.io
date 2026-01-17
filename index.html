@@ -158,6 +158,32 @@
             box-shadow: 0 5px 20px rgba(139, 172, 136, 0.2);
         }
 
+        .skill-item h3 {
+            color: #f4e8d0;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .skill-item ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .skill-item li {
+            color: #d4c5a9;
+            padding: 0.3rem 0;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        .skill-item li::before {
+            content: '•';
+            color: #8bac88;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -431,28 +457,47 @@
             <h2>Skills</h2>
             <div class="skills-grid">
                 <div class="skill-item">
-                    <h3>HTML & CSS</h3>
-                    <p>Building responsive web interfaces</p>
-                </div>
-                <div class="skill-item">
-                    <h3>JavaScript</h3>
-                    <p>Interactive web applications</p>
+                    <h3>Systems & Cloud</h3>
+                    <ul>
+                        <li>Windows & Linux</li>
+                        <li>Active Directory, Entra ID (Azure AD)</li>
+                        <li>Microsoft 365, Intune, Autopilot</li>
+                        <li>Hyper-V, Windows Server</li>
+                    </ul>
                 </div>
                 <div class="skill-item">
                     <h3>Networking</h3>
-                    <p>Network configuration and administration</p>
+                    <ul>
+                        <li>TCP/IP, DNS, DHCP</li>
+                        <li>VLANs, VPNs</li>
+                        <li>Routing & Switching</li>
+                        <li>Cisco IOS</li>
+                    </ul>
                 </div>
                 <div class="skill-item">
-                    <h3>Cybersecurity</h3>
-                    <p>Security frameworks and best practices</p>
+                    <h3>Security</h3>
+                    <ul>
+                        <li>ACLs, Firewalls, Network Hardening</li>
+                        <li>IDS/IPS, Nmap</li>
+                        <li>SIEM Monitoring (Guardz)</li>
+                    </ul>
                 </div>
                 <div class="skill-item">
-                    <h3>PowerShell</h3>
-                    <p>Automation and scripting</p>
+                    <h3>Scripting & Automation</h3>
+                    <ul>
+                        <li>PowerShell</li>
+                        <li>Python</li>
+                        <li>Bash</li>
+                        <li>SQL</li>
+                    </ul>
                 </div>
                 <div class="skill-item">
-                    <h3>Java</h3>
-                    <p>Application development</p>
+                    <h3>Development</h3>
+                    <ul>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Java</li>
+                        <li>GitHub</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -461,36 +506,64 @@
             <h2>Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <h3>Your Job Title</h3>
-                    <div class="company">Company Name</div>
-                    <div class="period">Month Year - Present</div>
+                    <h3>IT Support Technician Intern</h3>
+                    <div class="company">Optimyze Business Solutions</div>
+                    <div class="period">July 2025 - October 2025</div>
                     <p>Describe your key responsibilities and achievements in this role. What did you accomplish? What technologies did you work with?</p>
                 </div>
                 <div class="timeline-item">
-                    <h3>Previous Job Title</h3>
-                    <div class="company">Previous Company</div>
-                    <div class="period">Month Year - Month Year</div>
+                    <h3>Senior Pharmacy Assistant</h3>
+                    <div class="company">Chemist Warehouse</div>
+                    <div class="period">March 2021 - July 2025</div>
                     <p>Detail your contributions and the impact you made in this position. Highlight specific projects or initiatives you led or participated in.</p>
                 </div>
-                <div class="timeline-item">
-                    <h3>Earlier Position</h3>
+                <!-- <div class="timeline-item">
+                    <h3>Another Company</h3>
                     <div class="company">Another Company</div>
                     <div class="period">Month Year - Month Year</div>
                     <p>Share your experience and the skills you developed during this time. Focus on achievements that are relevant to your career goals.</p>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
             <div class="projects-grid">
                 <div class="project-card featured-project">
+                    <h3>Campbell and Starr Bakers' Network</h3>
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/jobo-robo/jobo-robo.github.io/main/lssc-framework-poster.png" alt="Visio Image">
+                    </div>
+                    <p>Windows Server | Active Directory | DNS/DHCP | PowerShell</p>
+                    <p>Designed and deployed a virtual business network with automated user provisioning and secure identity management.</p>
+                    <div class="project-tags">
+                        <span class="tag">Network Design</span>
+                        <span class="tag">Active Directory</span>
+                        <span class="tag">PowerShell</span>
+                        <span class="tag">DNS/DHCP</span>
+                    </div>
+                </div>
+                <div class="project-card featured-project">
+                    <h3>PowerShell Automation & Security Hardening</h3>
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/jobo-robo/jobo-robo.github.io/main/lssc-framework-poster.png" alt="Device Security">
+                        <img src="https://raw.githubusercontent.com/jobo-robo/jobo-robo.github.io/main/lssc-framework-poster.png" alt="Cloud Security">
+                    </div>
+                    <p>PowerShell | Intune | Entra ID | Microsoft 365</p>
+                    <p>Automated device provisioning and security hardening, significantly reducing manual setup time and configuration errors.</p>
+                    <div class="project-tags">
+                        <span class="tag">PowerShell</span>
+                        <span class="tag">Security</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                </div>
+                <div class="project-card featured-project">
                     <h3>Cybersecurity Challenges in Large Software Scale Projects (LSSC Framework)</h3>
                     <div class="project-image">
                         <img src="https://raw.githubusercontent.com/jobo-robo/jobo-robo.github.io/main/lssc-framework-poster.png" alt="LSSC Framework Research Poster">
                     </div>
-                    <p>As a final year project, my team finished working on an R&D project focused on literature to create a practical cybersecurity framework for software projects that would be used throughout the SDLC cycle while also catering to 70,000+ users.</p>
-                    <p>This project integrates security early in the development of software projects and involved collaboration with clients, mentors, and project team members through meetings and emails.</p>
+                    <p>DevSecOps | SDLC | Risk Management | Security Controls</p>
+                    <p>Developed a phase-based cybersecurity framework mapping real-world controls across the SDLC for large-scale systems.</p>
                     <div class="project-tags">
                         <span class="tag">Cybersecurity</span>
                         <span class="tag">SDLC</span>
@@ -503,8 +576,8 @@
                     <div class="project-image">
                         <img src="https://raw.githubusercontent.com/jobo-robo/jobo-robo.github.io/main/pickitup.png" alt="Pick IT Up Service Desk System">
                     </div>
-                    <p>In this project my partner and I were asked to program a service desk system. This involved the use of Java and GitHub. The system included user account creation with secure login and logout functionality.</p>
-                    <p>It provided a visual interface to view tickets from a Derby database, along with filtering and status updates (Open, Closed, In-Review). The platform also supported different account types, including IT staff and Guest users.</p>
+                    <p>Java | GitHub </p>
+                    <p>Built a service desk application with secure authentication, role-based access, and ticket tracking with database storage.</p>
                     <div class="project-tags">
                         <span class="tag">Java</span>
                         <span class="tag">Derby Database</span>
@@ -512,76 +585,65 @@
                         <span class="tag">GUI Development</span>
                     </div>
                 </div>
-                <div class="project-card featured-project">
-                    <h3>Campbell and Starr Bakers' Network</h3>
-                    <p>Based on a case study, my team and I were appointed to design and implement a robust network that meets the requirements of the business owners. In this project, I configured network devices of the virtual network, including the servers and the PC hosts.</p>
-                    <p>Together we installed the Active Directory, the DNS, and DHCP server. We also made IP configurations and wrote a PowerShell script to automate the creation of new AD users and assign their permissions.</p>
-                    <div class="project-tags">
-                        <span class="tag">Network Design</span>
-                        <span class="tag">Active Directory</span>
-                        <span class="tag">PowerShell</span>
-                        <span class="tag">DNS/DHCP</span>
-                    </div>
-                </div>
             </div>
         </section>
-
-    <footer>
-        <div class="social-links">
-            <a href="mailto:jmrl.contact@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/jobo-robo" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/jose-laserna" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <p>&copy; 2026 Jose Laserna. Designed and Built with ❤︎.</p>
-        <p>Jeremiah 29:11</p>
-    </footer>
-
-    <!-- Scroll to top button -->
-    <button class="scroll-to-top" id="scrollToTopBtn" title="Go to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Font Awesome for social icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <script>
-        // Generate random stars
-        const starsContainer = document.getElementById('stars');
-        for (let i = 0; i < 100; i++) {
-            const star = document.createElement('div');
-            star.className = 'star';
-            star.style.left = Math.random() * 100 + '%';
-            star.style.top = Math.random() * 100 + '%';
-            star.style.animationDelay = Math.random() * 3 + 's';
-            starsContainer.appendChild(star);
-        }
-
-        // Smooth scrolling for navigation
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            });
-        });
-
-        // Scroll to top button functionality
-        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
         
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                scrollToTopBtn.classList.add('visible');
-            } else {
-                scrollToTopBtn.classList.remove('visible');
-            }
-        });
+        <footer>
+            <div class="social-links">
+                <a href="mailto:jmrl.contact@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/jobo-robo" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jose-laserna" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2026 Jose Laserna. Designed and Built with ❤︎.</p>
+            <p>Jeremiah 29:11</p>
+        </footer>
 
-        scrollToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
+        <!-- Scroll to top button -->
+        <button class="scroll-to-top" id="scrollToTopBtn" title="Go to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <!-- Font Awesome for social icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <script>
+            // Generate random stars
+            const starsContainer = document.getElementById('stars');
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 3 + 's';
+                starsContainer.appendChild(star);
+            }
+
+            // Smooth scrolling for navigation
+            document.querySelectorAll('nav a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
             });
-        });
-    </script>
-</body>
+
+            // Scroll to top button functionality
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        </script>
+    </body>
 </html>
